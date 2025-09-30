@@ -34,7 +34,7 @@ Two forecasting approaches were implemented and evaluated:
 
 1.  **Prophet Model:** A Prophet model was trained to forecast the Apple stock closing price for the next year. The model achieved a Root Mean Squared Error (RMSE) of 5.64 and a Mean Absolute Error (MAE) of 4.37 on the historical data used for training.
 2.  **Multi-Output Regression with RandomForestRegressor:** This approach utilizes a Multi-Output Regression model with a RandomForestRegressor as the base estimator. Multi-Output Regression is a technique used when a single model needs to predict multiple target variables simultaneously. In this project, the model was trained to predict the closing price for three future time horizons: the next 1 day, the next 5 days, and the next 10 days. The model was evaluated using Mean Squared Error (MSE) of 18.58, a Root Mean Squared Error (RMSE) of 4.31, a Mean Absolute Error (MAE) of 3.23, and an R-squared (R2) score of 0.92 on the test set.
-
+![Actual vs Predicted Prices](actual_vs_predicted_prices.png)
 These results indicate that both models show promise in forecasting Apple stock prices, with the Multi-Output Regression model demonstrating a strong R-squared value on the test data for short-term predictions.
 
 ## Libraries Used
